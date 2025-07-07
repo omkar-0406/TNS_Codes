@@ -9,7 +9,7 @@ public class ConstructorUsingGetterSetter {
     
     // Default constructor
     public ConstructorUsingGetterSetter() {
-        System.out.println("Default constructor");
+        System.out.println("Explicit Default constructor");
     }
 
     // Parameterized constructor
@@ -48,5 +48,8 @@ public class ConstructorUsingGetterSetter {
         obj2.setId(id);
         
         ConstructorUsingGetterSetter obj3 = new ConstructorUsingGetterSetter(obj2.getId(), obj2.getName()); // Uses parameterized constructor
+        obj3.setId(id);
+        
+        sc.close();
     }
 }
